@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MenuTVC.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (strong, nonatomic) UINavigationController *ncMenu;
+@property (strong, nonatomic) MenuTVC *menuTVC;
+@property (strong, nonatomic) UITabBarController *tabBarController;
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
@@ -18,5 +23,7 @@
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
+- (NSFetchedResultsController *)obtenerClientes;
+- (NSFetchedResultsController *)obtenerCargos;
 
 @end

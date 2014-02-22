@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MenuTVC.h"
 
 @implementation AppDelegate
 
@@ -17,11 +18,81 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
+    self.menuTVC = [[MenuTVC alloc] initWithStyle:UITableViewStyleGrouped];
+    self.ncMenu = [[UINavigationController alloc] initWithRootViewController:self.menuTVC];
+    
+    self.tabBarController = [[UITabBarController alloc] init];
+    self.tabBarController.viewControllers = @[self.ncMenu];
+    
+    
+    self.window.rootViewController = self.tabBarController;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
+
+
+#pragma mark - Obtener Clientes
+
+- (NSFetchedResultsController *)obtenerClientes
+{
+    
+    NSFetchedResultsController *datosFRC;
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Cliente" inManagedObjectContext:[self managedObjectContext]];
+    NSSortDescriptor *nomSort = [[NSSortDescriptor alloc] initWithKey:@"codigo" ascending:YES];
+    NSArray *sortDescriptors = [[NSArray alloc] initWithObjects: nomSort, nil];
+    fetchRequest.sortDescriptors = sortDescriptors;
+    
+    [fetchRequest setEntity:entity];
+    
+    datosFRC = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
+                                                   managedObjectContext:[self managedObjectContext] sectionNameKeyPath:nil cacheName:nil];
+    
+    NSError *fetchingError = nil;
+    if ([datosFRC performFetch:&fetchingError]){
+        NSLog(@"Successfully fetched.");
+    } else {
+        NSLog(@"Failed to fetch.");
+    }
+    
+    return datosFRC;
+}
+
+#pragma mark - Obtener Cargo
+
+
+- (NSFetchedResultsController *)obtenerCargos
+{
+    
+    NSFetchedResultsController *datosFRC;
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Cargo" inManagedObjectContext:[self managedObjectContext]];
+    NSSortDescriptor *nomSort = [[NSSortDescriptor alloc] initWithKey:@"codigo" ascending:YES];
+    NSArray *sortDescriptors = [[NSArray alloc] initWithObjects: nomSort, nil];
+    fetchRequest.sortDescriptors = sortDescriptors;
+    
+    [fetchRequest setEntity:entity];
+    
+    datosFRC = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
+                                                   managedObjectContext:[self managedObjectContext] sectionNameKeyPath:nil cacheName:nil];
+    
+    NSError *fetchingError = nil;
+    if ([datosFRC performFetch:&fetchingError]){
+        NSLog(@"Successfully fetched.");
+    } else {
+        NSLog(@"Failed to fetch.");
+    }
+    
+    return datosFRC;
+}
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

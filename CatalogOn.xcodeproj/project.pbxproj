@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41D27AE818B478CA004C5FC8 /* ClientesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D27AE718B478CA004C5FC8 /* ClientesTVC.m */; };
+		41D27AEB18B47CD5004C5FC8 /* ClienteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D27AEA18B47CD5004C5FC8 /* ClienteVC.m */; };
 		41D48F5218B3CB9800457E57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D48F5118B3CB9800457E57 /* Foundation.framework */; };
 		41D48F5418B3CB9800457E57 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D48F5318B3CB9800457E57 /* CoreGraphics.framework */; };
 		41D48F5618B3CB9800457E57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D48F5518B3CB9800457E57 /* UIKit.framework */; };
@@ -22,6 +24,11 @@
 		41D48F7318B3CB9800457E57 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D48F5718B3CB9800457E57 /* CoreData.framework */; };
 		41D48F7B18B3CB9800457E57 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41D48F7918B3CB9800457E57 /* InfoPlist.strings */; };
 		41D48F7D18B3CB9800457E57 /* CatalogOnTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D48F7C18B3CB9800457E57 /* CatalogOnTests.m */; };
+		41D48F8918B3CC2E00457E57 /* Cargo.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D48F8818B3CC2E00457E57 /* Cargo.m */; };
+		41D48F8C18B3CC2E00457E57 /* Cliente.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D48F8B18B3CC2E00457E57 /* Cliente.m */; };
+		41D48F8F18B3CC5B00457E57 /* MenuTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D48F8E18B3CC5B00457E57 /* MenuTVC.m */; };
+		41D4B7DC18B4E762007126FE /* CargosTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D4B7DB18B4E762007126FE /* CargosTVC.m */; };
+		41D4B7DF18B4E781007126FE /* CargoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D4B7DE18B4E781007126FE /* CargoVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		41D27AE618B478CA004C5FC8 /* ClientesTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientesTVC.h; sourceTree = "<group>"; };
+		41D27AE718B478CA004C5FC8 /* ClientesTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientesTVC.m; sourceTree = "<group>"; };
+		41D27AE918B47CD5004C5FC8 /* ClienteVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClienteVC.h; sourceTree = "<group>"; };
+		41D27AEA18B47CD5004C5FC8 /* ClienteVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClienteVC.m; sourceTree = "<group>"; };
 		41D48F4E18B3CB9800457E57 /* CatalogOn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatalogOn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D48F5118B3CB9800457E57 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		41D48F5318B3CB9800457E57 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +64,16 @@
 		41D48F7818B3CB9800457E57 /* CatalogOnTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CatalogOnTests-Info.plist"; sourceTree = "<group>"; };
 		41D48F7A18B3CB9800457E57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		41D48F7C18B3CB9800457E57 /* CatalogOnTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatalogOnTests.m; sourceTree = "<group>"; };
+		41D48F8718B3CC2E00457E57 /* Cargo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cargo.h; sourceTree = "<group>"; };
+		41D48F8818B3CC2E00457E57 /* Cargo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cargo.m; sourceTree = "<group>"; };
+		41D48F8A18B3CC2E00457E57 /* Cliente.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cliente.h; sourceTree = "<group>"; };
+		41D48F8B18B3CC2E00457E57 /* Cliente.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cliente.m; sourceTree = "<group>"; };
+		41D48F8D18B3CC5B00457E57 /* MenuTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuTVC.h; path = ../MenuTVC.h; sourceTree = "<group>"; };
+		41D48F8E18B3CC5B00457E57 /* MenuTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuTVC.m; path = ../MenuTVC.m; sourceTree = "<group>"; };
+		41D4B7DA18B4E762007126FE /* CargosTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CargosTVC.h; sourceTree = "<group>"; };
+		41D4B7DB18B4E762007126FE /* CargosTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CargosTVC.m; sourceTree = "<group>"; };
+		41D4B7DD18B4E781007126FE /* CargoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CargoVC.h; sourceTree = "<group>"; };
+		41D4B7DE18B4E781007126FE /* CargoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CargoVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +102,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41D27AE518B47895004C5FC8 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				41D27AE918B47CD5004C5FC8 /* ClienteVC.h */,
+				41D27AEA18B47CD5004C5FC8 /* ClienteVC.m */,
+				41D4B7DD18B4E781007126FE /* CargoVC.h */,
+				41D4B7DE18B4E781007126FE /* CargoVC.m */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
 		41D48F4518B3CB9800457E57 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +151,9 @@
 				41D48F6318B3CB9800457E57 /* AppDelegate.m */,
 				41D48F6818B3CB9800457E57 /* Images.xcassets */,
 				41D48F6518B3CB9800457E57 /* CatalogOn.xcdatamodeld */,
+				41D48F9018B3CC6000457E57 /* TVC */,
+				41D27AE518B47895004C5FC8 /* VC */,
+				41D48F8618B3CC0A00457E57 /* entidad */,
 				41D48F5A18B3CB9800457E57 /* Supporting Files */,
 			);
 			path = CatalogOn;
@@ -151,6 +186,30 @@
 				41D48F7918B3CB9800457E57 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		41D48F8618B3CC0A00457E57 /* entidad */ = {
+			isa = PBXGroup;
+			children = (
+				41D48F8A18B3CC2E00457E57 /* Cliente.h */,
+				41D48F8B18B3CC2E00457E57 /* Cliente.m */,
+				41D48F8718B3CC2E00457E57 /* Cargo.h */,
+				41D48F8818B3CC2E00457E57 /* Cargo.m */,
+			);
+			name = entidad;
+			sourceTree = "<group>";
+		};
+		41D48F9018B3CC6000457E57 /* TVC */ = {
+			isa = PBXGroup;
+			children = (
+				41D48F8D18B3CC5B00457E57 /* MenuTVC.h */,
+				41D48F8E18B3CC5B00457E57 /* MenuTVC.m */,
+				41D27AE618B478CA004C5FC8 /* ClientesTVC.h */,
+				41D27AE718B478CA004C5FC8 /* ClientesTVC.m */,
+				41D4B7DA18B4E762007126FE /* CargosTVC.h */,
+				41D4B7DB18B4E762007126FE /* CargosTVC.m */,
+			);
+			name = TVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,7 +309,14 @@
 			files = (
 				41D48F6418B3CB9800457E57 /* AppDelegate.m in Sources */,
 				41D48F6018B3CB9800457E57 /* main.m in Sources */,
+				41D48F8918B3CC2E00457E57 /* Cargo.m in Sources */,
+				41D27AEB18B47CD5004C5FC8 /* ClienteVC.m in Sources */,
 				41D48F6718B3CB9800457E57 /* CatalogOn.xcdatamodeld in Sources */,
+				41D4B7DF18B4E781007126FE /* CargoVC.m in Sources */,
+				41D4B7DC18B4E762007126FE /* CargosTVC.m in Sources */,
+				41D48F8F18B3CC5B00457E57 /* MenuTVC.m in Sources */,
+				41D48F8C18B3CC2E00457E57 /* Cliente.m in Sources */,
+				41D27AE818B478CA004C5FC8 /* ClientesTVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +519,7 @@
 				41D48F8218B3CB9800457E57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		41D48F8318B3CB9800457E57 /* Build configuration list for PBXNativeTarget "CatalogOnTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +528,7 @@
 				41D48F8518B3CB9800457E57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
